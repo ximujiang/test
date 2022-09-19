@@ -11,7 +11,7 @@ class TestLaGou:
     @allure.story("xxxx")
     def test_visit_lagou(self):
         result = self.s.get(self.url)
-        assert result.status_code==200
+        assert result.status_code==100
 
     def teardown_class(self):
         self.s.close()
